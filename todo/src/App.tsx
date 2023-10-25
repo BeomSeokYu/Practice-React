@@ -1,6 +1,7 @@
 import styled from "@emotion/styled";
 import { DataView } from "components/DataView";
 import { InputContainer } from "components/InputContainer";
+import { ToDoListContextProvider } from "contexts/ToDoListContext";
 import { useState } from "react";
 
 const Container = styled.div`
@@ -31,7 +32,7 @@ function App() {
     <Container>
       <ToDoListContextProvider>
         <DataView />
-        <InputContainer/>
+        <InputContainer />
       </ToDoListContextProvider>
     </Container>
   );

@@ -8,10 +8,10 @@ interface Context {
 
 const ToDoListContext = createContext<Context>({
     toDoList: [],
-    /* eslint-disable @typescript=eslint/no-empty-function */
+    /* eslint-disable @typescript-eslint/no-empty-function */
     onAdd: (): void => {},
-    onDelete: (): void => {},
-    /* eslint-enable @typescript=eslint/no-empty-function */
+    onDelete: (): void => {}
+    /* eslint-enable @typescript-eslint/no-empty-function */
 });
 
 interface Props {
@@ -44,3 +44,5 @@ const ToDoListContextProvider = ({ children }: Props) => {
         </ToDoListContext.Provider>
     );
 }
+
+export { ToDoListContext, ToDoListContextProvider };
